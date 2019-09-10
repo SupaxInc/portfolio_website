@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #313896;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-outline-primary {
+    color: #9F32B2;
+    border-color: #9F32B2;
+}
+
+.btn-outline-primary:hover,  .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open>.dropdown-toggle.btn-outline-primary{
+    background-color: #9F32B2;
+    border-color: #9F32B2;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px;
+    -moz-box-shadow: 0 8px 6px -6px;
+    box-shadow: 0 8px 6px -6px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 200px;
+}
+
+.jumbotron {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.jumbotron .bg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .container {
+    position: relative;
+    color: #00D7FF;
+    z-index: 2;
+}
+
