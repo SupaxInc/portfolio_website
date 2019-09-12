@@ -1,0 +1,20 @@
+.btn-primary {
+    background-color: #9F32B2;
+    color: #fff;
+    border-color: #313896;
+}
+
+btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #9F32B2;
+}
+
+.btn-primary:hover,  .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+    background-color: #fff;
+    border-color: #313896;
+    color: #9F32B2;
+}
+
+.fa-product-hunt {
+    
+}

@@ -7,12 +7,13 @@ import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 const routes: Routes = [
   {path: '', redirectTo: '/pages/home', pathMatch:'full'},
 
-  {
+  { // State will show the state of the app depending on the component loaded in router outlet
     path: 'pages', component: PagesComponent,
     children: [
       // PATH URL: /pages/home
-      {path: 'home', component: HomeComponent},
-      {path: 'aboutme', component: AboutmeComponent}
+      {path: 'home', component: HomeComponent,  data: { state: 1} },
+      // PATH URL: /pages/aboutme
+      {path: 'aboutme', component: AboutmeComponent , data: { state: 2}}
     ]
   }
 ];

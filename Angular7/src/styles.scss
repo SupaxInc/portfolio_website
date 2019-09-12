@@ -11,6 +11,11 @@ body {
     border-color: #9F32B2;
 }
 
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    background-color: #313896;
+}
+
 .btn-outline-primary:hover,  .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open>.dropdown-toggle.btn-outline-primary{
     background-color: #9F32B2;
     border-color: #9F32B2;
@@ -27,14 +32,13 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     position: relative;
-    top: 200px;
+    margin-top: 200px;
 }
 
 .jumbotron {
     border-radius: 0;
-    background-color: transparent;
+    background: transparent;
 }
 
 .jumbotron .bg {
@@ -44,13 +48,24 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    position: relative;
     z-index: 1;
 }
 
 .jumbotron .container {
-    position: relative;
     color: #00D7FF;
     z-index: 2;
 }
 
+router-outlet {
+    display: none;
+}
+.routeContainer {
+    /* Making position relative so that children elements can be
+    positioned to the relative parent*/ 
+    position: relative;
+}
+.routeContainer>* { /* Any subchild of routerContainer*/
+    /* Angular default is inline so we will change it blocks, 
+    so when we change the size it will be different than inline*/
+    display: block;
+}
