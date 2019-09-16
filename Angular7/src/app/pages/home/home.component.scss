@@ -15,6 +15,33 @@ btn-primary:not(:disabled):not(.disabled).active,
     color: #9F32B2;
 }
 
-.fa-product-hunt {
-    
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron {
+    border-radius: 0;
+    background: transparent;
+}
+
+.jumbotron .bg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.jumbotron .container {
+    color: #00D7FF;
+    z-index: 2;
 }

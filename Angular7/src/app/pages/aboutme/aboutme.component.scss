@@ -1,0 +1,31 @@
+.row {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+#socials {
+    padding: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #9F32B2;
+    justify-content: center;
+}
+
+a {
+    all: unset;
+}
+
+.fab {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+.fab:hover {
+    color: white;
+}
