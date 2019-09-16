@@ -2,12 +2,37 @@ body {
     background-color: #313896;
 }
 
+/* Hide elements inside here when screen resolutions below 600px*/
+@media (max-width: 600px) {
+    #navsocials .fab {
+        visibility: hidden;
+    }
+}
+
 .btn {
     border-radius: 0;
 }
 
 .hover-cursor {
     cursor: pointer;
+}
+
+#navsocials {
+    margin-right: auto;
+    margin-left: auto;
+    color: #9F32B2;
+}
+#navsocials a {
+    all: unset;
+}
+#navsocials .fab{
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#navsocials .fab:hover {
+    color: #313896;
 }
 
 .line {
