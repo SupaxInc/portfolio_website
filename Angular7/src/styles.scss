@@ -17,10 +17,14 @@ body {
     cursor: pointer;
 }
 
+.nav-link {
+    margin-right: 7px;
+    margin-left: 7px;
+}
 #navsocials {
     margin-right: auto;
-    margin-left: auto;
-    color: #9F32B2;
+    padding-top: 5px;
+    color: black;
 }
 #navsocials a {
     all: unset;
@@ -28,11 +32,14 @@ body {
 #navsocials .fab{
     margin-left: 6px;
     margin-right: 6px;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
 }
 #navsocials .fab:hover {
-    color: #313896;
+    color: #9F32B2;
+}
+.navbar-brand {
+    margin-right: 0.3rem;
 }
 
 .line {
@@ -46,7 +53,7 @@ body {
 
 .section {
     margin: 0 auto;
-    padding-top: 140px;
+    padding-top: 80px;
     position: relative;
 }
 .section-title {

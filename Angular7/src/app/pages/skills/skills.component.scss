@@ -1,0 +1,30 @@
+p {
+    color: #00D7FF;
+}
+
+.list-group {
+    box-shadow: 4px 6px 1px 1px #ccc;
+}
+.list-group-item {
+    border-radius: 0px;
+    padding: .50rem 1.25rem;
+}
+
+#skills {
+    padding-top: 40px;
+}
+
+.card {
+    border-radius: 0px;
+    height: 320px;
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    box-shadow: 6px 6px 1px 1px #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}

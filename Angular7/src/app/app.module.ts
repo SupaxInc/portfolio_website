@@ -8,13 +8,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { SkillsComponent } from './pages/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagesComponent,
     HomeComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

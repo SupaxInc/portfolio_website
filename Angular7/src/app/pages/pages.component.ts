@@ -28,7 +28,59 @@ import { Router, ActivatedRoute, RouterOutlet } from '@angular/router';
           ]),
         ]),
       ]),
+      transition('1 => 3', [    // transitions from state 1 to state 3
+        style({ height: '!'}),
+        query(':enter', style( { transform: 'translateX(100%)'})),
+        query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
+        group([
+          query(':leave', [ // animate the component that is leaving
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style( { transform:'translateX(-100%)'})),
+          ]),
+          query(':enter', [ // animate the component that is entering
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style ({ transform: 'translateX(0)'})),
+          ]),
+        ]),
+      ]),
+      transition('2 => 3', [    // transitions from state 2 to state 3
+        style({ height: '!'}),
+        query(':enter', style( { transform: 'translateX(100%)'})),
+        query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
+        group([
+          query(':leave', [ // animate the component that is leaving
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style( { transform:'translateX(-100%)'})),
+          ]),
+          query(':enter', [ // animate the component that is entering
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style ({ transform: 'translateX(0)'})),
+          ]),
+        ]),
+      ]),
       transition('2 => 1', [
+        style({ height: '!'}),
+        query(':enter', style( { transform: 'translateX(-100%)'})),
+        query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
+        group([
+          query(':leave', [ // animate the component that is leaving
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style( { transform:'translateX(100%)'})),
+          ]),
+          query(':enter', [ // animate the component that is entering
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style ({ transform: 'translateX(0)'})),
+          ]),
+        ]),
+      ]),
+      transition('3 => 1', [
+        style({ height: '!'}),
+        query(':enter', style( { transform: 'translateX(-100%)'})),
+        query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
+        group([
+          query(':leave', [ // animate the component that is leaving
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style( { transform:'translateX(100%)'})),
+          ]),
+          query(':enter', [ // animate the component that is entering
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style ({ transform: 'translateX(0)'})),
+          ]),
+        ]),
+      ]),
+      transition('3 => 2', [
         style({ height: '!'}),
         query(':enter', style( { transform: 'translateX(-100%)'})),
         query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
