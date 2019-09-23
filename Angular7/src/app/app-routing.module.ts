@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { Project1Component } from './pages/portfolio/project1/project1.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/pages/home', pathMatch:'full'},
@@ -19,7 +20,11 @@ const routes: Routes = [
       // PATH URL: /pages/skills
       {path: 'skills', component: SkillsComponent, data: { state: 3} },
       // PATH URL: /pages/portfolio
-      {path: 'portfolio', component: PortfolioComponent, data: { state: 4} }
+      {path: 'portfolio', component: PortfolioComponent, data: { state: 4},
+        children: [
+          { path: 'project1', component: Project1Component }
+        ] 
+      }
     ]
   }
 ];
