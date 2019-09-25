@@ -25,8 +25,14 @@
       <li class="nav-item">
           <a class="nav-link" routerLink='/pages/skills' routerLinkActive='active'>Skills</a>
       </li>
-      <li class="nav-item">
-          <a class="nav-link" routerLink='/pages/portfolio' routerLinkActive='active'>Portfolio</a>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink='/pages/portfolio' routerLinkActive='active' data-toggle="dropdown"
+            aria-expanded="false" role="button" aria-haspopup="true">
+            Portfolio
+          </a>
+          <div class="dropdown-menu">
+            <a routerLink='/pages/portfolio/1' routerLinkActive='active' class="dropdown-item"> Self-driving car</a>
+          </div>
       </li>
       <li class="nav-item">
           <a class="nav-link" routerLink='/pages/contactme' routerLinkActive='active'>Contact Me</a>

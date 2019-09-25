@@ -1,5 +1,7 @@
 body {
     background-color: #313896;
+    /* Hides vertical scrollbar during vertical animations */
+    overflow-x: hidden;
 }
 
 /* Hide elements inside here when screen resolutions below 600px*/
@@ -90,6 +92,10 @@ body {
     -webkit-box-shadow: 0 8px 6px -6px;
     -moz-box-shadow: 0 8px 6px -6px;
     box-shadow: 0 8px 6px -6px;
+}
+
+ul {
+    list-style-type: square;
 }
 
 router-outlet {

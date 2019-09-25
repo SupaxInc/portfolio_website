@@ -20,11 +20,10 @@ const routes: Routes = [
       // PATH URL: /pages/skills
       {path: 'skills', component: SkillsComponent, data: { state: 3} },
       // PATH URL: /pages/portfolio
-      {path: 'portfolio', component: PortfolioComponent, data: { state: 4},
-        children: [
-          { path: 'project1', component: Project1Component }
-        ] 
-      }
+      {path: 'portfolio', component: PortfolioComponent, data: { state: 4}},
+      // ** Make this dynamic URL for another feature **
+      // PATH URL: /pages/portfolio/1
+      { path: 'portfolio/1', component: Project1Component, data: { state: 5}}
     ]
   }
 ];

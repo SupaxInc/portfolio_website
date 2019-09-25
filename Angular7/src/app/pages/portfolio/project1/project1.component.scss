@@ -1,0 +1,36 @@
+body {
+    margin-bottom: 40px;
+}
+
+.backSection {
+    margin: 0 auto;
+    padding-top: 5px;
+    position: relative;
+}
+
+.projectSection {
+    margin: 0 auto;
+    padding-top: 0;
+    position: relative;
+}
+
+.backbtn {
+    display: inline-block;
+    font-size: 64px;
+    transition: 0.2s linear;
+    transform: scale(1.8,1.1);
+}
+.backbtn:hover {
+    transform: scale(1.9,1.2);
+    color: white;
+    cursor: pointer;
+}
+
+.blockquote {
+    font-size: 14.5px; 
+    color: #00D7FF;
+}
+
+.list-group-item {
+    border-radius: 0;
+}
