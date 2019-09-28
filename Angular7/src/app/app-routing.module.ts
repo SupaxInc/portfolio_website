@@ -8,6 +8,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { Project1Component } from './pages/portfolio/project1/project1.component';
 import { Project2Component } from './pages/portfolio/project2/project2.component';
 import { Project3Component } from './pages/portfolio/project3/project3.component';
+import { Project4Component } from './pages/portfolio/project4/project4.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/pages/home', pathMatch:'full'},
@@ -30,7 +31,9 @@ const routes: Routes = [
       // PATH URL: /pages/portfolio/2
       { path: 'portfolio/2', component: Project2Component, data: {state: 6}},
       // PATH  URL: /pages/portfolio/3
-      { path: 'portfolio/3', component: Project3Component, data: {state: 7}}
+      { path: 'portfolio/3', component: Project3Component, data: {state: 7}},
+      // PATH URL: /pages/portfolio/4
+      { path: 'portfolio/4', component: Project4Component, data: {state: 8}}
     ]
   }
 ];
