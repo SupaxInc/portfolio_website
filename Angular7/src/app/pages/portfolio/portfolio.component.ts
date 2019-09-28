@@ -14,8 +14,8 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick() {
-    this.router.navigate(['pages/portfolio/1']);
+  onClick(projectNum: number) {
+    this.router.navigate([`pages/portfolio/${projectNum}`]);
   }
 
 }

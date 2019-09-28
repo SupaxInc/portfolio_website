@@ -173,8 +173,38 @@ import { Router, ActivatedRoute, RouterOutlet } from '@angular/router';
           ]),
         ]),
       ]),
+      // /pages/portfolio ==> /pages/portfolio/2
+      transition('4 => 6', [
+        // overflow: hidden to hide vertical scroll bar during animation
+        style({ height: '!', overflow: 'hidden'}),
+        query(':enter', style( { transform: 'translateY(100%)'})),
+        query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
+        group([
+          query(':leave', [ // animate the component that is leaving
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style( { transform:'translateY(-100%)'},)),
+          ]),
+          query(':enter', [ // animate the component that is entering
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style ({ transform: 'translateY(0)'})),
+          ]),
+        ]),
+      ]),
       // /pages/portfolio/1 ==> /pages/portfolio
       transition('5 => 4', [
+        // overflow: hidden to hide vertical scroll bar during animation
+        style({ height: '!', overflow: 'hidden'}),
+        query(':enter', style( { transform: 'translateY(-100%)'})),
+        query(':enter, :leave', style({position:'absolute', top: 0, left: 0, right: 0})),
+        group([
+          query(':leave', [ // animate the component that is leaving
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style( { transform:'translateY(100%)'})),
+          ]),
+          query(':enter', [ // animate the component that is entering
+            animate('0.55s cubic-bezier(.35, 0, .25, 1)', style ({ transform: 'translateY(0)'})),
+          ]),
+        ]),
+      ]),
+      // /pages/portfolio/2 ==> /pages/portfolio
+      transition('6 => 4', [
         // overflow: hidden to hide vertical scroll bar during animation
         style({ height: '!', overflow: 'hidden'}),
         query(':enter', style( { transform: 'translateY(-100%)'})),

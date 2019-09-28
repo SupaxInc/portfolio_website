@@ -6,6 +6,7 @@ import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { Project1Component } from './pages/portfolio/project1/project1.component';
+import { Project2Component } from './pages/portfolio/project2/project2.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/pages/home', pathMatch:'full'},
@@ -21,9 +22,12 @@ const routes: Routes = [
       {path: 'skills', component: SkillsComponent, data: { state: 3} },
       // PATH URL: /pages/portfolio
       {path: 'portfolio', component: PortfolioComponent, data: { state: 4}},
+
       // ** Make this dynamic URL for another feature **
       // PATH URL: /pages/portfolio/1
-      { path: 'portfolio/1', component: Project1Component, data: { state: 5}}
+      { path: 'portfolio/1', component: Project1Component, data: { state: 5}},
+      // PATH URL: /pages/portfolio/2
+      { path: 'portfolio/2', component: Project2Component, data: {state: 6}}
     ]
   }
 ];

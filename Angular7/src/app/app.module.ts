@@ -11,6 +11,7 @@ import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { SkillsComponent } from './pages/skills/skills.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { Project1Component } from './pages/portfolio/project1/project1.component';
+import { Project2Component } from './pages/portfolio/project2/project2.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Project1Component } from './pages/portfolio/project1/project1.component
     AboutmeComponent,
     SkillsComponent,
     PortfolioComponent,
-    Project1Component
+    Project1Component,
+    Project2Component
   ],
   imports: [
     BrowserModule,
