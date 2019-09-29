@@ -318,4 +318,8 @@ export class PagesComponent implements OnInit {
   findState(outlet: RouterOutlet) {
     return outlet.activatedRouteData['state']; // state is the variable from routing module
   }
+
+  btnClick() {
+    window.open('/assets/pdf/PaulJohnGonzales_Resume2019.pdf', '_blank');
+  }
 }
