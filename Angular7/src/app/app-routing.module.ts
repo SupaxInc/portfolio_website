@@ -39,6 +39,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  // The useHash is for HashLocationStrategy
+  // Placing a (#) as a part of the URL called the hash fragment
   imports: [RouterModule.forRoot(routes,
     { useHash: true})],
   exports: [RouterModule]
