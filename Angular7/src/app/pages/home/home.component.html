@@ -2,27 +2,30 @@
     <div class="jumbotron">
         <div class="bg"></div>
         <div class="container">
-            <div class="row">
-                <div *ngIf="this.finishedAnim === 'yes'" @greetingsAnim>
-                    <p class="lead">Hello! My name is..</p>
+            <div class="col-md">
+                <div class="row">
+                    <div *ngIf="this.finishedAnim === 'yes'" @greetingsAnim>
+                        <p class="lead">Hello! My name is..</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1 class="display-3" style="color: white;">Paul John Gonzales</h1>
+                    <hr class="my-4 line">
+                    <p>I am a software developer living in Toronto, ON, specializing in back-end development but with
+                        front-end
+                        experience as well.
+                        <br>Looking to collaborate with others to create high-quality websites and applications for
+                        exceptional
+                        business results.
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="lead">
+                        <button class="btn btn-primary btn-lg" (click)="onClick()">Learn more</button>
+                    </p>
                 </div>
             </div>
-            <div class="row">
-                <h1 class="display-3" style="color: white;">Paul John Gonzales</h1>
-                <hr class="my-4 line">
-                <p>I am a software developer living in Toronto, ON, specializing in back-end development but with
-                    front-end
-                    experience as well.
-                    <br>Looking to collaborate with others to create high-quality websites and applications for
-                    exceptional
-                    business results.
-                </p>
-            </div>
-            <div class="row">
-                <p class="lead">
-                    <button class="btn btn-primary btn-lg" (click)="onClick()">Learn more</button>
-                </p>
-            </div>
+
         </div>
     </div>
 </div>
