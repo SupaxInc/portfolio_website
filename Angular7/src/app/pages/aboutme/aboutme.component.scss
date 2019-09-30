@@ -15,8 +15,7 @@
     color: #9F32B2;
     justify-content: center;
 }
-
-a {
+#socials a {
     all: unset;
 }
 
@@ -27,5 +26,13 @@ a {
     cursor: pointer;
 }
 .fab:hover {
+    color: white;
+}
+
+#portfolioBtn {
+    color: #9F32B2; 
+    text-decoration-line: underline;
+}
+#portfolioBtn:hover {
     color: white;
 }

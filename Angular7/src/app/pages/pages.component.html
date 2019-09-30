@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light mr-auto ml-auto">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <span style="font-size: 2em; margin-left: -8px; margin-right: 10px; display:block;">
     <i class="fab fa-product-hunt"></i>
   </span>
@@ -47,7 +47,8 @@
 
 <!-- Based on ACTIVE routerLink, this div will show the route that is ACTIVE-->
 <!-- @ sign is a special syntax for angular animations, basically the name of the animations-->
-<div class="routeContainer" [@routeAnimation]="findState(myOutlet)">
+<div class="routeContainer" [@routeAnimation]="findState(myOutlet)" 
+  (@routeAnimation.done)="animFinished($event)" (@routeAnimation.start)="animStarted($event)">
   <!-- local template variable with #-->
   <router-outlet #myOutlet="outlet"></router-outlet>
 </div>

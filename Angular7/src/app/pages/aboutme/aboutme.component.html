@@ -13,34 +13,47 @@
         </div>
         <div id="socials" class="row">
           <a href="https://www.instagram.com/supax.inc/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/paul-john-gonzales-3b5a1a165/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/paul-john-gonzales-3b5a1a165/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
           <a href="https://github.com/supaxinc" target="_blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://www.hackerrank.com/paulj_gonzales?hr_r=1" target="_blank"><i class="fab fa-hackerrank"></i></a>
+          <a href="https://www.hackerrank.com/paulj_gonzales?hr_r=1" target="_blank"><i
+              class="fab fa-hackerrank"></i></a>
         </div>
       </div>
       <div class="col-sm">
-        <h4 style="color: white; font-weight: lighter;">Hello!</h4>
+        <div class="row">
+          <div *ngIf="this.finishedAnim === 'yes'" @greetingsAnim>
+            <h4 style="color: white; font-weight: lighter;">Hello!</h4>
+          </div>
+        </div>
         <blockquote class="blockquote" style="font-size: 16px; color: #00D7FF;">
           <p>
-            My name is Paul, I am a recent computer engineer graduate with a <span style="color: white;">cumulative GPA of 3.6/4.0</span> from Seneca
-            College in Toronto, ON. I have done many different types of work on the internet such as software development,
-            database management, creating my own video games, but I specialize in <a style="color: white;">back-end/front-end development</a>.
+            My name is Paul, I am a recent computer engineer graduate with a <span style="color: white;">cumulative GPA
+              of 3.6/4.0</span> from Seneca
+            College in Toronto, ON. I have done many different types of work on the internet such as software
+            development,
+            database management, creating my own video games, but I specialize in <a
+              style="color: white;">back-end/front-end development</a>.
           </p>
           <p>
             One of my biggest traits is that I am a big <a style="color: white;">self-learner</a>, I always push to
             learn the latest technology due
             to my curious nature. For example, during my job hunt after graduating I still wanted to learn new
             <a style="color: white;">innovative technology</a> on my
-            own so I took the initiative by learning to create decentralized applications and <span style="color: white;">creating tutorials</span> on how
+            own so I took the initiative by learning to create decentralized applications and <span
+              style="color: white;">creating tutorials</span> on how
             beginners can begin using blockchain technology.
           </p>
           <p>
-            Visit my portfolio to see some of the personal projects I've done or from my time in school.
+            Visit my <a id="portfolioBtn" href="#/pages/portfolio">portfolio</a> to see some of the personal projects
+            I've done or from my time in school.
           </p>
         </blockquote>
       </div>
       <div class="col-sm">
-        <h4 style="color: white; font-weight: lighter;">Some hobbies that I enjoy</h4>
+        <div *ngIf="this.finishedAnim === 'yes'" @greetingsAnim>
+          <h4 style="color: white; font-weight: lighter;">Some hobbies that I enjoy</h4>
+        </div>
         <blockquote class="blockquote" style="font-size: 16px; color: #00D7FF">
           <p>When I am not coding any projects, some things I love to do are:</p>
           <ul>

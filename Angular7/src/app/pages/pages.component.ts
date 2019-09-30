@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { query, animate, group, trigger, style, transition, state } from '@angular/animations'; 
+import { query, animate, group, trigger, style, transition, state, AnimationTransitionMetadata } from '@angular/animations'; 
 import { Router, ActivatedRoute, RouterOutlet } from '@angular/router';
+import { AnimationService } from './shared/animation.service';
 
 @Component({
   selector: 'app-pages',
@@ -309,9 +310,24 @@ import { Router, ActivatedRoute, RouterOutlet } from '@angular/router';
 })
 export class PagesComponent implements OnInit {
 
-  constructor(router: Router, activatedRoute: ActivatedRoute) { }
+  public animState: string;
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private service: AnimationService) { }
 
   ngOnInit() {
+    this.animState = "no";
+  }
+
+  public animStarted (event: AnimationEvent) {
+    console.log("Start animating");
+    this.animState ="no";
+    this.service.checkAnimation(this.animState);
+  }
+
+  public animFinished (event: AnimationEvent) {
+    console.log("Done animating");
+    this.animState = "yes";
+    this.service.checkAnimation(this.animState);
   }
 
   // outlet passed in from html page
