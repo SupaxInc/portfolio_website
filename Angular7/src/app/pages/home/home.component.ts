@@ -13,7 +13,6 @@ import { Subscription } from 'rxjs';
     trigger('greetingsAnim', [
       // transition of any to any
       transition('* => *', [
-        style({height: '!'}),
         // '.lead' means it is choosing the .lead class to query inside the div of @greetingsAnim
         query('.lead', style({ opacity: 0, transform: 'translateX(-45px)'})),
 

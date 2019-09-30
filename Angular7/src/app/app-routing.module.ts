@@ -9,6 +9,7 @@ import { Project1Component } from './pages/portfolio/project1/project1.component
 import { Project2Component } from './pages/portfolio/project2/project2.component';
 import { Project3Component } from './pages/portfolio/project3/project3.component';
 import { Project4Component } from './pages/portfolio/project4/project4.component';
+import { ContactmeComponent } from './pages/contactme/contactme.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/pages/home', pathMatch:'full'},
@@ -24,6 +25,8 @@ const routes: Routes = [
       {path: 'skills', component: SkillsComponent, data: { state: 3} },
       // PATH URL: /pages/portfolio
       {path: 'portfolio', component: PortfolioComponent, data: { state: 4}},
+      // PATH URL: /pages/contactme
+      {path: 'contactme', component: ContactmeComponent, data: { state: 9}},
 
       // ** Make this dynamic URL for another feature **
       // PATH URL: /pages/portfolio/1
